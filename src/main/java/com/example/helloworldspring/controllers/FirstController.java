@@ -8,19 +8,19 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class FirstController {
 
-    //exercise 1:
+    //exercise 1.1:
     @GetMapping
     public String hello(){
         return "Hello bitch";
     }
 
-    //Exercise 2:
+    //Exercise 1.2:
     @GetMapping("/echo")
     public String endPoint(@RequestParam String input){
         return input;
     }
 
-    //Exercise 3:
+    //Exercise 1.3:
     @GetMapping("/isItFriday")
     public String isItFriday(){
         DayOfWeek dayOfWeek = new DayOfWeek();
